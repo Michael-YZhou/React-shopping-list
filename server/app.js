@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 
 const logger = require("./middleware/logger");
 const errorHandler = require("./middleware/error-handler");

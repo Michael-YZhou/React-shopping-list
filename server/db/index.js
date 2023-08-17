@@ -1,4 +1,4 @@
-import.meta.env.VITE_MONGO_DB_CONNECTION_STRING;
+// import.meta.env.VITE_MONGO_DB_CONNECTION_STRING;
 const { MongoClient } = require("mongodb");
 
 const mongoClient = new MongoClient(
