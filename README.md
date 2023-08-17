@@ -1,2 +1,2 @@
-# ga-proj4
+# gs-proj4
 project 4
