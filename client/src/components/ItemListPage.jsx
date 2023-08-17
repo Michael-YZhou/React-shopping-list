@@ -9,14 +9,17 @@ function ItemListPage() {
     console.log(item);
     // call to backend add new item to db,
     // db will return the newly added data
-    const res = await fetch("/api/item", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(item),
-    });
+    const res = await fetch(
+      "https://react-shopping-list.onrender.com/api/item",
+      {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(item),
+      }
+    );
     console.log(res);
     const resJson = await res.json();
     console.log(resJson);
@@ -28,7 +31,7 @@ function ItemListPage() {
     const updatedItems = items.filter((item) => item._id != id);
     setItems(updatedItems);
 
-    await fetch(`/api/item/${id}`, {
+    await fetch(`https://react-shopping-list.onrender.com/api/item/${id}`, {
       method: "DELETE",
     });
   }
@@ -59,20 +62,25 @@ function ItemListPage() {
     }
 
     // also use updatedItems(signle piece of info) to update database
-    const res = await fetch(`/api/item/${id}`, {
-      method: "PUT",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(updatedItem),
-    });
+    const res = await fetch(
+      `https://react-shopping-list.onrender.com/api/item/${id}`,
+      {
+        method: "PUT",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(updatedItem),
+      }
+    );
     const resJson = await res.json();
     console.log(resJson);
   }
 
   async function fetchItems() {
-    const res = await fetch("/api/item");
+    const res = await fetch(
+      "https://react-shopping-list.onrender.com/api/item"
+    );
     console.log(res);
     const resJson = await res.json();
     console.log(resJson);
