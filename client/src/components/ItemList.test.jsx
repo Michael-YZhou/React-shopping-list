@@ -1,7 +1,7 @@
 // import RTL utilities
 import { render, screen } from "@testing-library/react";
 // import component under test
-import ItemList from "../ItemList";
+import ItemList from "./ItemList";
 
 it("returns todo items", async () => {
   const mockResponse = [

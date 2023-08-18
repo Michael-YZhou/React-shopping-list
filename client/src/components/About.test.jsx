@@ -1,7 +1,7 @@
 // import RTL utilities
 import { render, screen } from "@testing-library/react";
 // import component under test
-import About from "../About";
+import About from "./About";
 
 // function onToggleItem() {}
 // function onDeleteItem() {}
