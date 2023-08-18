@@ -15,7 +15,7 @@ it("should show about page", () => {
   render(<About></About>);
 
   // use RTL utility `screen.getByText` to search for element with expected text
-  const about = screen.getByText("About Page");
+  const about = screen.getByText("About this app");
 
   // assert element in document
   expect(about).toBeInTheDocument();

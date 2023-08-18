@@ -17,7 +17,7 @@ function AddItemForm({ onAddItems }) {
     onAddItems(newItem);
   }
 
-  const unitArr = [" ", "kg", "box"];
+  const unitArr = [" ", "g", "kg", "box", "pack", "tray", "litre"];
 
   return (
     <div>

@@ -1,6 +1,8 @@
+import ListGroup from "react-bootstrap/ListGroup";
+
 function Item({ item, onToggleItem, onDeleteItem }) {
   return (
-    <div>
+    <ListGroup.Item>
       <input
         type="checkbox"
         checked={item.checked}
@@ -15,7 +17,7 @@ function Item({ item, onToggleItem, onDeleteItem }) {
       >
         ❌
       </button>
-    </div>
+    </ListGroup.Item>
   );
 }
 
