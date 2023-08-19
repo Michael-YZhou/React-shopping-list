@@ -6,6 +6,8 @@ This is simple shopping list app that allows users add, remove and check items i
 
 The app is deployed at: https://react-shopping-list-frontend.onrender.com
 
+![alt text](/client/src/assets/demo_ui.png "Title")
+
 ## Technology used
 
 This app uses React for frontend, Node.js and Express for backend and a Mongodb to store the shopping list data. It also uses React Bootstrap for some basic styling.
