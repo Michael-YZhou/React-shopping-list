@@ -20,7 +20,16 @@ function AddItemForm({ onAddItems }) {
   const unitArr = [" ", "g", "kg", "box", "pack", "tray", "litre"];
 
   return (
-    <div>
+    <div
+      className="bg-light"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        gap: "10px",
+        margin: "4px",
+        alignItems: "center",
+      }}
+    >
       <h3>What do you 🛍️ need?</h3>
       <form onSubmit={handleSubmit}>
         <input
