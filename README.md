@@ -58,3 +58,22 @@ EzyCart
 ├── client
 └── server
 ```
+
+### A reminder of how to fix Express API CORS issues
+
+```
+app.use(
+  cors({
+    origin: "https://p4-static.onrender.com",
+  })
+);
+app.options("*", cors());
+```
+
+install cors package first from npm
+
+import cors from "cors";
+
+(and replace origin with your own render api url ofc 😄 )
+
+For more information: https://www.npmjs.com/package/cors
